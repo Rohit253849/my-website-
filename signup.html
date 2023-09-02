@@ -532,8 +532,13 @@ color:red;
     var strongPass = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{6,})");
     var btnclicked = false
     const mailformat = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-
+      
+      } else {
+          swal({
+            title: "Welcome back!",
+            text:  "Let the binge watch begin!!",
+            type: "success",
+          });
 
     function DisplayResults(e) {
       var name = document.forms["regform"]["name"].value;
